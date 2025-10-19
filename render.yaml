@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 8479919737:AAEYofffz9W5--UssgdS5lFN9Y9NkxdidSw
+      - key: SUPPORT_CHAT_ID
+        value: -1002783988320
+      - key: ADMIN_IDS
+        value: 8051825625,1221002491
